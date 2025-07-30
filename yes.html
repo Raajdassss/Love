@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yay!</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: url('https://media.tenor.com/9euVF1XwE_YAAAAi/bunny-bunnies.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    h1, p {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 1s ease-out forwards;
+      text-shadow: 2px 2px 4px #ffffffaa;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      color: #111; /* Darker text */
+      animation-delay: 0.2s;
+    }
+
+    p {
+      font-size: 1.8rem;
+      color: #222; /* Slightly lighter than h1 but still dark */
+      max-width: 90%;
+      animation-delay: 0.8s;
+    }
+.btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s ease-out forwards;
+  animation-delay: 1.8s;
+}
+
+
+    .btn:hover {
+      background-color: #ff3f9f;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Yay! 💖</h1>
+  <!-- <p>You have no idea how long I’ve waited for this moment. Hearing you say 'yes' felt like time stopped—like the world finally made sense. Every little thing led me to you, and now that you're mine, I promise to never stop choosing you, every single day. I want to laugh with you in the sun, hold you through the storms, and build a life filled with late-night talks, spontaneous adventures, and quiet moments that only we understand. You’ve just turned a beautiful chapter into our forever story—and I can’t wait to begin it with you.</p> -->
+   <p>Thank you for choosing me, I will try to keep you happy always. I love you so much! 💖</p>
+   <button class="btn" onclick="location.href='surprise.html'">🎁 Click Here for more ......</button>
+</body>
+</html>
