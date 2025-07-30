@@ -26,19 +26,13 @@
       animation: fadeInText 2s ease-in-out forwards;
     }
 
-    .note {
-      font-size: 1rem;
-      margin-top: 10px;
-      opacity: 0.6;
-    }
-
     .spotify {
       width: 80%;
       max-width: 400px;
       margin-top: 30px;
       opacity: 0;
       transform: scale(0.9);
-      animation: fadeInSpotify 1s ease-in-out 1s forwards;
+      animation: fadeInSpotify s ease-in-out 1s forwards;
     }
 
     @keyframes fadeInText {
@@ -80,7 +74,6 @@
 <body>
 
   <h1>This one's for you 💙</h1>
-  <div class="note">(Tap play below — it'll auto-stop in 23.5 seconds ⏱️)</div>
 
   <div class="spotify">
     <iframe id="spotifyPlayer"
@@ -88,19 +81,19 @@
       src="https://open.spotify.com/embed/track/3be9ACTxtcL6Zm4vJRUiPG?utm_source=generator&theme=0"
       width="100%" height="152"
       frameBorder="0"
-      allow="clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
       loading="lazy">
     </iframe>
   </div>
 
   <script>
-    // After 23.5 seconds, refresh the iframe to simulate stop
-    setTimeout(() => {
-      const iframe = document.getElementById('spotifyPlayer');
-      iframe.src = ""; // Unload
-    }, 23500);
+    // // Stop Spotify after 23.5 seconds
+    // setTimeout(() => {
+    //   const iframe = document.getElementById('spotifyPlayer');
+    //   iframe.src = iframe.src;
+    // }, 23500);
 
-    // Floating hearts
+    // Floating hearts animation
     setInterval(() => {
       const heart = document.createElement('div');
       heart.classList.add('floating-heart');
